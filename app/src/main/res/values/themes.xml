@@ -1,26 +1,47 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Checkers_First" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Checkers_First" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/brown_500</item>
         <item name="colorPrimaryVariant">@color/brown_700</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/dark_green</item>
+        <item name="buttonColor">@color/green</item>
+        <item name="buttonColorOrange">@color/orange</item>
+        <item name="editTextColor">@color/beige</item>
         <!-- Secondary brand color. -->
-        <item name="android:backgroundTint">?attr/colorPrimary</item>
+
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textColor">?attr/colorSecondary</item>
         <!-- Customize your theme here. -->
     </style>
-    <style name="ButtonOne" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorSecondary">@color/brown_200</item>
+    <style name="ButtonOne" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
         <item name="android:backgroundTint">?attr/colorSecondary</item>
         <item name="android:paddingHorizontal" tools:targetApi="o">60dp</item>
         <item name="android:paddingVertical" tools:targetApi="o">15dp</item>
         <item name="fontFamily">@font/oswald_regular</item>
     </style>
-    <style name="InputEditText" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorSecondary">@color/brown_200</item>
-        <item name="android:backgroundTint">?attr/colorSecondary</item>
+    <style name="ButtonTwo" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">?attr/buttonColor</item>
+        <item name="android:paddingHorizontal" tools:targetApi="o">60dp</item>
+        <item name="android:paddingVertical" tools:targetApi="o">15dp</item>
+        <item name="fontFamily">@font/oswald_regular</item>
+    </style>
+    <style name="ButtonThree" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">?attr/buttonColorOrange</item>
+        <item name="android:paddingHorizontal" tools:targetApi="o">60dp</item>
+        <item name="android:paddingVertical" tools:targetApi="o">15dp</item>
+        <item name="fontFamily">@font/oswald_regular</item>
+    </style>
+    <style name="InputEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:backgroundTint">?attr/editTextColor</item>
         <item name="android:paddingVertical" tools:targetApi="o">10dp</item>
+        <item name="android:textColor">@color/dark_green</item>
+    </style>
+    <style name="SeparatorWhite" >
+        <item name="android:backgroundTint">?attr/colorOnPrimary</item>
     </style>
 </resources>

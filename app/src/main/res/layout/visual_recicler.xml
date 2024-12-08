@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    >
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        >
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/default_profile"
+            android:layout_marginLeft="30dp"
+            />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            >
+            <TextView android:id="@+id/usernameFriends"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:textColorHint="@color/white"
+                android:text="@string/username"
+                android:textColor="@color/white"
+                />
+
+            <TextView android:id="@+id/statusFriends"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="30dp"
+                android:textColorHint="@color/green"
+                android:text="@string/online"
+                android:textColor="@color/green"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/inviteButton"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            style="@style/ButtonTwo"
+            android:text="@string/invite"
+            android:layout_marginLeft="10dp"
+            android:textSize="19dp"
+            android:padding="2dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

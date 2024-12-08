@@ -18,10 +18,11 @@
     <string name="shop_lower">Tienda</string>
     <string name="puzzles_lower">Puzzles</string>
     <string name="rules_lower">Reglas</string>
+    <string name="profile">PERFIL</string>
     <string name="profile_lower">Perfil</string>
     <string name="username_lower">Nombre de usuario</string>
     <string name="country">Pais</string>
-    <string name="description">Estado</string>
+    <string name="estatus">Estado</string>
     <string name="name">Nombre</string>
     <string name="surnames">Apellidos</string>
     <string name="language">Lenguaje</string>
@@ -29,10 +30,10 @@
     <string name="history">Historial</string>
     <string name="friends">Amigos</string>
     <string name="stats">Stats</string>
-    <string name="white">Blancas</string>
-    <string name="black">Negras</string>
-    <string name="board">Tableros</string>
-    <string name="sounds">Sonidos</string>
+    <string name="white">BLANCAS</string>
+    <string name="black">NEGRAS</string>
+    <string name="board">TABLEROS</string>
+    <string name="sounds">SONIDOS</string>
     <string name="search">Buscar</string>
     <string name="invite">Invitar</string>
     <string name="suggestions">Sugerencias</string>
@@ -76,4 +77,5 @@
     <string name="lifes_remaining">VIDAS RESTANTES: </string>
     <string name="solution">Solucion</string>
     <string name="hint">Pista</string>
+    <string name="rank">Rango: x puntos</string>
 </resources>
