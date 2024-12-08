@@ -34,6 +34,10 @@ public class Register extends AppCompatActivity {
         registerButton = findViewById(R.id.registerInButton);
 
         registerButton.setOnClickListener(v -> {
+          Intent intent = new Intent(Register.this,Lobby.class);
+        });
+        /*
+        registerButton.setOnClickListener(v -> {
             String username = etUsername.getText().toString();
             String email = etEmail.getText().toString();
             String password = etPassword.getText().toString();
@@ -72,5 +76,7 @@ public class Register extends AppCompatActivity {
                 }
             }
         });
+
+         */
     }
 }

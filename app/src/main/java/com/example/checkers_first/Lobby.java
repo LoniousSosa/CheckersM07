@@ -1,10 +1,8 @@
 package com.example.checkers_first;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -13,12 +11,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import java.sql.SQLOutput;
-
 public class Lobby extends AppCompatActivity {
 
-    Button onlineButton,customButton,profileButton,puzzleButton;
-    ImageButton tiendaButton,puzzledosButton,reglasDeUsoButton;
+    Button onlineButton,customButton, tiendaButton,puzzleButton;
+    ImageButton ayudaButton,puzzledosButton,reglasDeUsoButton,settingsButton,profileButton;
     String username;
 
     @Override
@@ -38,10 +34,13 @@ public class Lobby extends AppCompatActivity {
 
         onlineButton = findViewById(R.id.onlineButton);
         customButton = findViewById(R.id.customButton);
-        profileButton = findViewById(R.id.profileButton);
+        tiendaButton = findViewById(R.id.tiendaButton);
         puzzleButton = findViewById(R.id.puzzleLobby);
-        tiendaButton = findViewById(R.id.tienda);
-        puzzledosButton = findViewById(R.id.);
+        ayudaButton = findViewById(R.id.imageHelp);
+        puzzledosButton = findViewById(R.id.imagePuzzle);
+        reglasDeUsoButton = findViewById(R.id.imageRules);
+        settingsButton = findViewById(R.id.settings);
+        profileButton = findViewById(R.id.profile);
 
         System.out.println(username);
 
@@ -55,25 +54,33 @@ public class Lobby extends AppCompatActivity {
             startActivity(intentTablero);
         });
 
-        profileButton.setOnClickListener(v -> {
-            Intent intentProfile = new Intent(Lobby.this,Profile.class);
-            intentProfile.putExtra("username",username);
-            startActivity(intentProfile);
-        });
-
         puzzleButton.setOnClickListener(v -> {
             Intent intent = new Intent(Lobby.this,PuzzleSelection.class);
             startActivity(intent);
         });
 
-        /**tiendaButton.setOnClickListener(v -> {
+        tiendaButton.setOnClickListener(v -> {
             Intent intent = new Intent(Lobby.this,Shop.class);
             startActivity(intent);
         });
-         */
+
 
         puzzledosButton.setOnClickListener(v -> {
             Intent intent = new Intent(Lobby.this,Puzzles.class);
+            startActivity(intent);
+        });
+
+        settingsButton.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            /**
+             * Todavia no se como plantear la pantalla de configuración.
+             * Si poner opciones de idiomas, estilos y demás.
+             */
+            startActivity(intent);
+        });
+
+        profileButton.setOnClickListener(v -> {
+            Intent intent = new Intent(Lobby.this,Profile.class);
             startActivity(intent);
         });
     }
